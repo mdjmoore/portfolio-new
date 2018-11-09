@@ -1,28 +1,48 @@
-body {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  animation: gradient 10s linear infinite alternate;
-  
-  .overlay {
-    background: linear-gradient(160deg, transparent 0%, $blue-color 120%);
-    position: fixed;
-    top: 0;
-    right: 0;
+.modal {
+  &--diamond {
+    position: absolute;
+    top: calc(50% - 175px);
+    right: 200px;
+    transform: rotate(45deg);
+    width: 350px;
+    height: 350px;
+    border-style: double;
+    border-width: 10px;
+    border-color: $yellow-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      // get a fun font for this
+      text-align: center;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--navigation {
+    position: absolute;
     bottom: 0;
+    right: 0;
     left: 0;
-    
-    .modal {
-      background-color: $white-color;
-      height: 90vh;
-      width: 90%;
-      border-radius: 7px;
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-      margin: 50px auto;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        margin-bottom: 15px;
+
+        a {
+          text-decoration: none;
+          padding: 35px;
+        }
+      }
     }
   }
 }
 
+      
 
 @keyframes gradient {
   0% {

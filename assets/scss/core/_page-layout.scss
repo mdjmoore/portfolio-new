@@ -1,0 +1,83 @@
+body {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  animation: gradient 20s linear infinite alternate;
+  
+  .overlay {
+    background: linear-gradient(160deg, transparent 0%, $blue-color 120%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    .modal {
+      position: relative;
+      background-color: $white-color;
+      height: 90vh;
+      width: 90%;
+      border-radius: 7px;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      margin: 50px auto;
+
+      &--navigation {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        ul {
+          display: flex;
+          justify-content: space-around;
+
+          li {
+            margin-bottom: 15px;
+
+            a {
+              text-decoration: none;
+              padding: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes gradient {
+  0% {
+    background: #e8f7f7;
+  }
+  10% {
+    background: #d0f0ef;
+  }
+  20% {
+    background: #b6e7e6;
+  }
+  30% {
+    background: #99dedd;
+  }
+  40% {
+    background: #78d3d2;
+  }
+  50% {
+    background: #51c7c5;
+  }
+  60% {
+    background: #49b4b2;
+  }
+  70% {
+    background: #409e9c;
+  }
+  80% {
+    background: #358381;
+  }
+  90% {
+    background: #265e5d;
+  }
+  100% {
+    background: #21504f;
+  }
+}
