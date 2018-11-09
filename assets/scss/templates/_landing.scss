@@ -1,4 +1,14 @@
 .modal {
+  h1 {
+    color: $grey-color;
+    font-size: 5rem;
+    font-family: $hand-font;
+
+    span {
+      color: $blue-color;
+    }
+  }
+
   &--diamond {
     position: absolute;
     top: calc(50% - 175px);
@@ -17,27 +27,6 @@
       // get a fun font for this
       text-align: center;
       transform: rotate(-45deg);
-    }
-  }
-
-  &--navigation {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-
-    ul {
-      display: flex;
-      justify-content: space-around;
-
-      li {
-        margin-bottom: 15px;
-
-        a {
-          text-decoration: none;
-          padding: 35px;
-        }
-      }
     }
   }
 }
