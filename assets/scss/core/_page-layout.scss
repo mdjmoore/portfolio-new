@@ -13,6 +13,7 @@ body {
     left: 0;
     
     .modal {
+      padding:15px;
       position: relative;
       background-color: $white-color;
       height: 90vh;
@@ -33,7 +34,7 @@ body {
 
           li {
             margin-bottom: 15px;
-
+            
             a {
               color: $dark-grey-color;
               background:linear-gradient(to bottom, $yellow-color 0%,$yellow-color 100%);

@@ -25,13 +25,14 @@
 
     p {
       // get a fun font for this
+      font-size: 3rem;
+      font-weight: bold;
+      font-family: $serif-font;
       text-align: center;
       transform: rotate(-45deg);
     }
   }
 }
-
-      
 
 @keyframes gradient {
   0% {
