@@ -1,4 +1,5 @@
 body {
+  overflow: hidden;
   position: relative;
   height: 100vh;
   width: 100%;
@@ -13,11 +14,10 @@ body {
     left: 0;
     
     .modal {
-      padding:15px;
       position: relative;
       background-color: $white-color;
-      height: 90vh;
-      width: 90%;
+      height: 85vh;
+      width: 85%;
       border-radius: 7px;
       box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
       margin: 50px auto;
@@ -36,18 +36,20 @@ body {
             margin-bottom: 15px;
             
             a {
+              font-family: $serif-font;
+              font-size: rem-calc(20);
               color: $dark-grey-color;
-              background:linear-gradient(to bottom, $yellow-color 0%,$yellow-color 100%);
+              background:linear-gradient(to bottom, $yellow-color 0%, $yellow-color 100%);
               background-position: 0 100%;
               background-repeat: repeat-x;
               background-size: 2px 2px;
-              color: #000;
               text-decoration: none;
               transition: background-size .2s;
               text-decoration: none;
-              padding: 3px;
+              padding: 5px;
+              padding-top: 7px;
               &:hover {
-                background-size: 4px 50px;
+                background-size: 4px 70px;
               }
             }
           }

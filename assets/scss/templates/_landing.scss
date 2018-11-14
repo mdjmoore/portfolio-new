@@ -1,8 +1,10 @@
 .modal {
   h1 {
     color: $grey-color;
-    font-size: 5rem;
+    font-size: rem-calc(80); 
     font-family: $hand-font;
+    letter-spacing: 5px;
+    margin-left: 20px;
 
     span {
       color: $blue-color;
@@ -11,11 +13,11 @@
 
   &--diamond {
     position: absolute;
-    top: calc(50% - 175px);
+    top: calc(45% - 150px);
     right: 200px;
     transform: rotate(45deg);
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-style: double;
     border-width: 10px;
     border-color: $yellow-color;
@@ -25,47 +27,21 @@
 
     p {
       // get a fun font for this
-      font-size: 3rem;
-      font-weight: bold;
       font-family: $serif-font;
+      font-size: rem-calc(48);
+      font-weight: bold;
       text-align: center;
       transform: rotate(-45deg);
     }
   }
-}
 
-@keyframes gradient {
-  0% {
-    background: #e8f7f7;
-  }
-  10% {
-    background: #d0f0ef;
-  }
-  20% {
-    background: #b6e7e6;
-  }
-  30% {
-    background: #99dedd;
-  }
-  40% {
-    background: #78d3d2;
-  }
-  50% {
-    background: #51c7c5;
-  }
-  60% {
-    background: #49b4b2;
-  }
-  70% {
-    background: #409e9c;
-  }
-  80% {
-    background: #358381;
-  }
-  90% {
-    background: #265e5d;
-  }
-  100% {
-    background: #21504f;
+  &--byline {
+    font-family: $serif-font;
+    font-size: rem-calc(24);
+    margin-left: 20px;
+    
+    p {
+      display: inline;
+    }
   }
 }

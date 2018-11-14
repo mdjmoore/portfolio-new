@@ -1,0 +1,27 @@
+.modal {
+
+  &--about {
+    width: 60%;
+    margin-top: 80px;
+
+    p {
+      margin: 40px 20px;
+      font-family: $serif-font;
+      font-size: rem-calc(20);
+      line-height: 1.3;
+
+      a.modal--about {
+        &__toronto, &__baker, &__terminal, &__book, &__bandits, &__dnd {
+          // don't know for toronto
+          //baker - find baking time lapse video
+
+          text-decoration: none;
+          @include about--span();
+          &:hover {
+            pointer: cursor;
+          }
+        }
+      }
+    }
+  }
+}
